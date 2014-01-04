@@ -523,8 +523,6 @@ function isPrimitive(arg) {
 }
 exports.isPrimitive = isPrimitive;
 
-exports.isBuffer = require('./support/isBuffer');
-
 function objectToString(o) {
   return Object.prototype.toString.call(o);
 }
@@ -567,7 +565,7 @@ exports.log = function() {
  *     prototype.
  * @param {function} superCtor Constructor function to inherit prototype from.
  */
-exports.inherits = require('inherits');
+exports.inherits = require('inherit');
 
 exports._extend = function(origin, add) {
   // Don't do anything if add isn't an object
